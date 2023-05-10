@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #090f23;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.input-container {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 30vw;
+  padding: 0.5em;
+  font-size: 1.5em;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 3px;
+  border-color: white;
+  background-color: #090f23;
+  color: #1cade4;
+  outline: none;
+}
+
+
+.search-results {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #090f23;
+  border: 2px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  max-height: 220px;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.search-results .search-result:nth-child(odd) {
+  background-color: #1c2a55;
+}
+
+.search-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+
+.search-result:last-child {
+  border-bottom: none;
+}
+
+.search-result:hover {
+  background-color: #3b5fd3;
+}
+
+.search-result:nth-child(odd):hover {
+  background-color: #5074df;
+}
